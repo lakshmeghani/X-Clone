@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex container mx-auto h-screen">
+        <div class="first w-[20%] md:w-[50%]">
+            <div class="sideBar ml-[25%] flex flex-col justify-between h-full">
+                <ul class="flex flex-col justify-center">
+                    <li>
+                        <img class=" invert w-14 mr-6 md:mx-2 my-2 self-start" src="media/logo.jpg" alt="logo">
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/home.svg" alt="Home">
+                        <p class="sideLink text-[20px]  hidden md:block">Home</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/explore.svg" alt="explore">
+                        <p class="sideLink text-[20px]  hidden md:block">Explore</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/notification.svg" alt="notification">
+                        <p class="sideLink text-[20px]  hidden md:block">Notifications</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/message.svg" alt="messages">
+                        <p class="sideLink text-[20px]  hidden md:block">Messages</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6 rounded-md border-white border-2" src="media/sideBar/grok.png" alt="grok">
+                        <p class="sideLink text-[20px]  hidden md:block">Grok</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/bookmarks.svg" alt="bookmarks">
+                        <p class="sideLink text-[20px]  hidden md:block">Bookmarks</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/communities.svg" alt="communities">
+                        <p class="sideLink text-[20px]  hidden md:block">Communities</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="w-8 md:w-11 invert" src="media/sideBar/logo-removebg-preview.png" alt="premium">
+                        <p class="sideLink text-[20px] leading-[44px] hidden md:block">Premium</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/flash.svg" alt="Verified Orgs">
+                        <p class="sideLink text-[20px] hidden md:block">Verified Orgs</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/profile.svg" alt="profile">
+                        <p class="sideLink text-[20px] hidden md:block">Profile</p>
+                    </li>
+                    <li
+                        class="flex justify-center items-start gap-3 cursor-pointer hover:bg-[#181818] w-fit px-2 md:px-5 py-2 my-1 rounded-full">
+                        <img class="md:w-8 w-6" src="media/sideBar/more.svg" alt="more">
+                        <p class="sideLink text-[20px] hidden md:block">More</p>
+                    </li>
+                    <li class="flex justify-end md:pr-5 pr-3">
+                        <button class="post my-2 text-md font-bold rounded-full md:w-[90%] w-fit bg-blue-600 md:py-3 py-3 px-3">
+                            <img class="block md:hidden h-5" src="media/post.svg" alt="post">
+                            <p class="hidden md:block">Post</p>
+                        </button>
+                    </li>
+                </ul>
+                <div class="userDetails my-7 hidden md:block">
+                    <li class="mt-3 px-2 py-2 cursor-pointer flex justify-between gap-4"></li>
+                    <div class="content">
+                        <div class="userInfo flex gap-3 items-center">
+                            <img class="h-11" src="media/profilePic.svg" alt="profilePhoto">
+                            <div class="profileInfo">
+                                <div class="accountInfo flex justify-between">
+                                    <div class="main flex justify-between">
+                                        <div
+                                            class="accountName font-bold my-0.5 hover:underline whitespace-nowrap overflow-hidden">
+                                            Laksh Meghani</div>
+                                        <img class="h-6 ml-1.5" src="media/verified.png" alt="verified">
+                                    </div>
+                                    <div class="more"> <img src="media/more.svg" alt="more"></div>
+                                </div>
+                                <div class="userName w-fit text-gray-600 text-sm">@LsEagle18</div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="second w-[80%] md:w-[70%] border-x border-gray-800 h-full overflow-y-scroll scrollable-div scrollbar-hidden overflow-auto">
+            <div class="top flex justify-between text-lg my-4 border-b border-gray-600">
+                <div class="currentPage w-[45%] flex flex-col justify-between items-center cursor-pointer">
+                    <div class="left text-center mb-3">For you</div>
+                    <p class="currentPageLine w-1/4 bg-blue-600 h-1 rounded-full"></p>
+                </div>
+                <div class="right text-center w-[45%] text-gray-400 cursor-pointer">Following</div>
+                <div class="Settings pr-6 cursor-pointer"><img src="media/settings.svg" alt="settings"></div>
+            </div>
+            <div class="postWhatsHappening px-5 border-b border-gray-600">
+                <div class="accPost flex gap-3 items-center">
+                    <img class="h-10 md:h-12" src="media/profilePic.svg" alt="profile picture">
+                    <input class="messagePost text-xl bg-black outline-none" placeholder="What's happening ?!">
+                </div>
+                <p
+                    class="replyPossibility font-bold text-blue-400 my-3 ml-14 flex gap-3 items-center hover:bg-blue-500/20 w-fit px-3 py-1 rounded-full">
+                    <img class="h-4" src="media/globe.svg" alt="globe">
+                    Everyone can reply
+                </p>
+                <div class="horLine ml-14 h-0.5 bg-[#2b2b2b]"></div>
+                <div class="postUploadOptions h-5 my-5 ml-0 md:ml-14 flex justify-between items-center ">
+                    <ul class="imgOptions flex gap-0 md:gap-2">
+                        <li><img class="h-9 p-2 hover:bg-blue-500/20 rounded-full cursor-pointer"
+                                src="media/uploadOptions/uploadImg.svg" alt="upload image"></li>
+                        <li><img class="h-9 p-2 hover:bg-blue-500/20 rounded-full cursor-pointer"
+                                src="media/uploadOptions/uploadGIF.svg" alt="upload gif"></li>
+                        <li><img class="h-9 p-2 hover:bg-blue-500/20 rounded-full cursor-pointer"
+                                src="media/uploadOptions/uploadPoll.svg" alt="upload poll"></li>
+                        <li><img class="h-9 p-2 hover:bg-blue-500/20 rounded-full cursor-pointer"
+                                src="media/uploadOptions/addEmoji.svg" alt="upload emoji"></li>
+                        <li><img class="h-9 p-2 hover:bg-blue-500/20 rounded-full cursor-pointer"
+                                src="media/uploadOptions/scheduleUpload.svg" alt="schedule upload"></li>
+                        <li><img class="h-9 p-2 opacity-60 rounded-full " src="media/uploadOptions/addLoaction.svg"
+                                alt="add location"></li>
+                    </ul>
+                    <button class="post my-2 text-md font-bold rounded-full w-fit bg-[#386194] md:py-3 py-3 px-3 md:px-7">
+                        <img class="block md:hidden h-5" src="media/post.svg" alt="post">
+                        <p class="hidden md:block">Post</p>
+                    </button>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="singlePost border-b border-gray-600">
+                    <div class="postContent mr-4 ml-2 md:mx-2 flex gap-3 my-3">
+                        <img class="h-10 md:h-12 ml-2" src="media/profilePic.svg" alt="userPost">
+                        <div class="name-Post w-full">
+                            <div class="moreSep flex justify-between">
+                                <div class="head flex gap-2 items-center">
+                                    <p class="name font-bold hover:underline cursor-pointer">Meme Mania</p>
+                                    <img class="h-6" src="media/verified.png" alt="verified user">
+                                    <p class="userAccName hidden md:block text-gray-500">@localMemer101 · 6h</p>
+                                </div>
+                                <div class="more">
+                                    <img class="cursor-pointer" src="media/more.svg" alt="more">
+                                </div>
+                            </div>
+                            <p class="caption text-sm">When you name your company after a letter and still make it a cult &#x1F602;</p>
+                        </div>
+                    </div>
+                    <div class="mainPostContent ml-[12%] h-[250px] md:h-[500px] w-[250px] md:w-[500px] overflow-hidden rounded-2xl my-4">
+                        <img class=" object-cover rounded-2xl object-left-bottom" src="media/posts/post1.webp" alt="post image">
+                    </div>
+                    <div class="postOptions flex justify-between my-3 md:ml-[12%] ml-2 mr-3 gap-1 md:gap-3">
+                        <div class="comment flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/comment.svg" alt="comment">
+                            <p class="noOfComments md:block hidden text-gray-500 hover:text-blue-500 text-sm">71</p>
+                        </div>
+                        <div class="repost flex gap-1 items-center px-2 py-1 rounded-full hover:bg-[#45eeb6]/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/repost.svg" alt="repost">
+                            <p class="noOfReposts md:block hidden text-gray-500 hover:text-green-600 text-sm">207</p>
+                        </div>
+                        <div class="likes flex gap-1 items-center px-2 py-1 rounded-full hover:bg-red-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/like.svg" alt="like">
+                            <p class="noOfLikes md:block hidden text-gray-500 hover:text-red-500 text-sm">1.3K</p>
+                        </div>
+                        <div class="views flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/views.svg" alt="views">
+                            <p class="noOfViews md:block hidden text-gray-500 hover:text-blue-500 text-sm">6.3M</p>
+                        </div>
+                        <div class="bookmark/share flex gap-1 items-center py-1 cursor-pointer">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/bookmarks.svg" alt="comment">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/share.svg" alt="comment">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="singlePost border-b border-gray-600">
+                    <div class="postContent mr-4 ml-2 md:mx-2 flex gap-3 my-3">
+                        <img class="h-10 md:h-12 ml-2" src="media/profilePic.svg" alt="userPost">
+                        <div class="name-Post w-full">
+                            <div class="moreSep flex justify-between">
+                                <div class="head flex gap-2 items-center">
+                                    <p class="name font-bold hover:underline cursor-pointer">Meme Machine 900</p>
+                                    <img class="h-6" src="media/verified.png" alt="verified user">
+                                    <p class="userAccName hidden md:block text-gray-500">@memeFactory900 · 12h</p>
+                                </div>
+                                <div class="more">
+                                    <img class="cursor-pointer" src="media/more.svg" alt="more">
+                                </div>
+                            </div>
+                            <p class="caption text-sm">Forget Mars, Elon is taking us back to the true OG universe... Club Penguin!</p>
+                        </div>
+                    </div>
+                    <div class="mainPostContent ml-[12%] h-[250px] md:h-[500px] w-[250px] md:w-[500px] overflow-hidden rounded-2xl my-4">
+                        <img class=" object-cover rounded-2xl object-left-bottom" src="media/posts/post4.jpg" alt="post image">
+                    </div>
+                    <div class="postOptions flex justify-between my-3 md:ml-[12%] ml-2 mr-3 gap-1 md:gap-3">
+                        <div class="comment flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/comment.svg" alt="comment">
+                            <p class="noOfComments md:block hidden text-gray-500 hover:text-blue-500 text-sm">71</p>
+                        </div>
+                        <div class="repost flex gap-1 items-center px-2 py-1 rounded-full hover:bg-[#45eeb6]/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/repost.svg" alt="repost">
+                            <p class="noOfReposts md:block hidden text-gray-500 hover:text-green-600 text-sm">207</p>
+                        </div>
+                        <div class="likes flex gap-1 items-center px-2 py-1 rounded-full hover:bg-red-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/like.svg" alt="like">
+                            <p class="noOfLikes md:block hidden text-gray-500 hover:text-red-500 text-sm">1.3K</p>
+                        </div>
+                        <div class="views flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/views.svg" alt="views">
+                            <p class="noOfViews md:block hidden text-gray-500 hover:text-blue-500 text-sm">6.3M</p>
+                        </div>
+                        <div class="bookmark/share flex gap-1 items-center py-1 cursor-pointer">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/bookmarks.svg" alt="comment">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/share.svg" alt="comment">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="singlePost border-b border-gray-600">
+                    <div class="postContent mr-4 ml-2 md:mx-2 flex gap-3 my-3">
+                        <img class="h-10 md:h-12 ml-2" src="media/profilePic.svg" alt="userPost">
+                        <div class="name-Post w-full">
+                            <div class="moreSep flex justify-between">
+                                <div class="head flex gap-2 items-center">
+                                    <p class="name font-bold hover:underline cursor-pointer">InfiniteLaughs</p>
+                                    <img class="h-6" src="media/verified.png" alt="verified user">
+                                    <p class="userAccName hidden md:block text-gray-500">@LaughingLords107 · 19h</p>
+                                </div>
+                                <div class="more">
+                                    <img class="cursor-pointer" src="media/more.svg" alt="more">
+                                </div>
+                            </div>
+                            <p class="caption text-sm">Elon Musk’s baby name generator: Loading... 1%... Error 404: Normal name not found!</p>
+                        </div>
+                    </div>
+                    <div class="mainPostContent ml-[12%] h-[250px] md:h-[500px] w-[250px] md:w-[500px] overflow-hidden rounded-2xl my-4">
+                        <img class=" object-cover rounded-2xl object-left-bottom" src="media/posts/post3. - Funny" alt="post image">
+                    </div>
+                    <div class="postOptions flex justify-between my-3 md:ml-[12%] ml-2 mr-3 gap-1 md:gap-3">
+                        <div class="comment flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/comment.svg" alt="comment">
+                            <p class="noOfComments md:block hidden text-gray-500 hover:text-blue-500 text-sm">71</p>
+                        </div>
+                        <div class="repost flex gap-1 items-center px-2 py-1 rounded-full hover:bg-[#45eeb6]/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/repost.svg" alt="repost">
+                            <p class="noOfReposts md:block hidden text-gray-500 hover:text-green-600 text-sm">207</p>
+                        </div>
+                        <div class="likes flex gap-1 items-center px-2 py-1 rounded-full hover:bg-red-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/like.svg" alt="like">
+                            <p class="noOfLikes md:block hidden text-gray-500 hover:text-red-500 text-sm">1.3K</p>
+                        </div>
+                        <div class="views flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/views.svg" alt="views">
+                            <p class="noOfViews md:block hidden text-gray-500 hover:text-blue-500 text-sm">6.3M</p>
+                        </div>
+                        <div class="bookmark/share flex gap-1 items-center py-1 cursor-pointer">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/bookmarks.svg" alt="comment">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/share.svg" alt="comment">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="singlePost border-b border-gray-600">
+                    <div class="postContent mr-4 ml-2 md:mx-2 flex gap-3 my-3">
+                        <img class="h-10 md:h-12 ml-2" src="media/profilePic.svg" alt="userPost">
+                        <div class="name-Post w-full">
+                            <div class="moreSep flex justify-between">
+                                <div class="head flex gap-2 items-center">
+                                    <p class="name font-bold hover:underline cursor-pointer">Lord Factory</p>
+                                    <img class="h-6" src="media/verified.png" alt="verified user">
+                                    <p class="userAccName hidden md:block text-gray-500">@GiggleGuru · Oct 16</p>
+                                </div>
+                                <div class="more">
+                                    <img class="cursor-pointer" src="media/more.svg" alt="more">
+                                </div>
+                            </div>
+                            <p class="caption text-sm">Why are there 2 E's in BEE?</p>
+                        </div>
+                    </div>
+                    <div class="mainPostContent ml-[12%] h-[250px] md:h-[500px] w-[250px] md:w-[500px] overflow-hidden rounded-2xl my-4">
+                        <img class=" object-cover rounded-2xl object-left-bottom" src="media/posts/post2.jpeg" alt="post image">
+                    </div>
+                    <div class="postOptions flex justify-between my-3 md:ml-[12%] ml-2 mr-3 gap-1 md:gap-3">
+                        <div class="comment flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/comment.svg" alt="comment">
+                            <p class="noOfComments md:block hidden text-gray-500 hover:text-blue-500 text-sm">55</p>
+                        </div>
+                        <div class="repost flex gap-1 items-center px-2 py-1 rounded-full hover:bg-[#45eeb6]/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/repost.svg" alt="repost">
+                            <p class="noOfReposts md:block hidden text-gray-500 hover:text-green-600 text-sm">669</p>
+                        </div>
+                        <div class="likes flex gap-1 items-center px-2 py-1 rounded-full hover:bg-red-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/like.svg" alt="like">
+                            <p class="noOfLikes md:block hidden text-gray-500 hover:text-red-500 text-sm">9.6K</p>
+                        </div>
+                        <div class="views flex gap-1 items-center px-2 py-1 rounded-full hover:bg-blue-500/20 cursor-pointer">
+                            <img class="h-6" src="media/post options/views.svg" alt="views">
+                            <p class="noOfViews md:block hidden text-gray-500 hover:text-blue-500 text-sm">15.9M</p>
+                        </div>
+                        <div class="bookmark/share flex gap-1 items-center py-1 cursor-pointer">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/bookmarks.svg" alt="comment">
+                            <img class="h-10 px-2 py-2 rounded-full hover:bg-blue-500/20" src="media/post options/share.svg" alt="comment">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="thrid w-[50%] mr-20 hidden md:block">
+            <div class="searchBar flex items-center">
+                <div
+                    class="searchIcon w-[10%] h-10 bg-gray-800 ml-10 flex items-center justify-center rounded-l-full pl-5">
+                    <img src="media/searchIcon.svg" alt="">
+                </div>
+                <input type="text" name="search bar"
+                    class="bg-gray-800 w-[80%] mr-10 my-2 h-10 rounded-r-full px-5 outline-none" placeholder="Search">
+            </div>
+            <div class="whatsHappening w-[80%] border border-gray-600 h-auto mx-10 pt-2 my-2 rounded-lg">
+                <h1 class="text-xl font-bold py-2 px-5">What's happening</h1>
+                <ul>
+                    <li class="mt-3 hover:bg-[#181818] px-5 py-2 cursor-pointer">
+                        <div class="trendingTitle flex justify-between items-center">
+                            <p class="title w-fit text-gray-600 text-sm">Trending in India</p>
+                            <img src="media/more.svg" alt="more details">
+                        </div>
+                        <div class="trendingHead font-bold my-0.5">#MissileAttack</div>
+                        <div class="trendingPosts w-fit text-gray-600 text-sm">40.5K posts</div>
+                    </li>
+                    <li class="mt-3 hover:bg-[#181818] px-5 py-2 cursor-pointer">
+                        <div class="trendingTitle flex justify-between items-center">
+                            <p class="title w-fit text-gray-600 text-sm">Entertainment · Trending</p>
+                            <img src="media/more.svg" alt="more details">
+                        </div>
+                        <div class="trendingHead font-bold my-0.5">Orry</div>
+                        <div class="trendingPosts w-fit text-gray-600 text-sm">3,110 posts</div>
+                    </li>
+                    <li class="mt-3 hover:bg-[#181818] px-5 py-2 cursor-pointer">
+                        <div class="trendingTitle flex justify-between items-center">
+                            <p class="title w-fit text-gray-600 text-sm">Trending in India</p>
+                            <img src="media/more.svg" alt="more details">
+                        </div>
+                        <div class="trendingHead font-bold my-0.5">#MalavikaMohanan</div>
+                        <div class="trendingPosts w-fit text-gray-600 tex3t-sm">1,880 posts</div>
+                    </li>
+                </ul>
+                <p class="showMore px-5 py-4 mt-3 rounded-b-lg text-blue-500 cursor-pointer">Show
+                    more</p>
+            </div>
+            <div class="whosFollowing w-[80%] border border-gray-600 h-auto mx-10 pt-2 my-2 rounded-lg">
+                <h1 class="text-xl font-bold py-2 px-5">Who to follow</h1>
+                <ul>
+                    <li class="mt-3 px-2 py-2 cursor-pointer flex justify-between gap-4">
+                        <div class="content">
+                            <div class="userInfo flex gap-3 items-center">
+                                <img class="h-11" src="media/profilePic.svg" alt="profilePhoto">
+                                <div class="profileInfo">
+                                    <div class="accountInfo flex gap-1">
+                                        <div
+                                            class="accountName font-bold my-0.5 hover:underline whitespace-nowrap overflow-hidden">
+                                            Aman Dattarwala</div>
+                                        <img class="h-6" src="media/verified.png" alt="verified">
+                                    </div>
+                                    <div class="userName w-fit text-gray-600 text-sm">@AmanDattarwala</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followBtn">
+                            <button
+                                class="follow w-fit bg-[#181818] px-4 py-2 font-bold rounded-full hover:bg-gray-800">Follow</button>
+                        </div>
+                    </li>
+                    <li class="mt-3 px-2 py-2 cursor-pointer flex justify-between gap-4">
+                        <div class="content">
+                            <div class="userInfo flex gap-3 items-center">
+                                <img class="h-11" src="media/profilePic.svg" alt="profilePhoto">
+                                <div class="profileInfo">
+                                    <div class="accountInfo flex gap-1">
+                                        <div
+                                            class="accountName font-bold my-0.5 hover:underline whitespace-nowrap overflow-hidden">
+                                            Elon Musk</div>
+                                        <img class="h-6" src="media/verified.png" alt="verified">
+                                    </div>
+                                    <div class="userName w-fit text-gray-600 text-sm">@elonmusk</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followBtn">
+                            <button
+                                class="follow w-fit bg-[#181818] px-4 py-2 font-bold rounded-full hover:bg-gray-800">Follow</button>
+                        </div>
+                    </li>
+                    <li class="mt-3 px-2 py-2 cursor-pointer flex justify-between gap-4">
+                        <div class="content">
+                            <div class="userInfo flex gap-3 items-center">
+                                <img class="h-11" src="media/profilePic.svg" alt="profilePhoto">
+                                <div class="profileInfo">
+                                    <div class="accountInfo flex gap-1">
+                                        <div
+                                            class="accountName font-bold my-0.5 hover:underline whitespace-nowrap overflow-hidden">
+                                            Docker : Build 39X Fas</div>
+                                        <img class="h-6" src="media/superVerified.png" alt="verified">
+                                    </div>
+                                    <div class="userName w-fit text-gray-600 text-sm">@Docker</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followBtn">
+                            <button
+                                class="follow w-fit bg-[#181818] px-4 py-2 font-bold rounded-full hover:bg-gray-800">Follow</button>
+                        </div>
+                    </li>
+                </ul>
+                <p class="showMore px-5 py-4 mt-3 rounded-b-lg text-blue-500 cursor-pointer">Show
+                    more</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
